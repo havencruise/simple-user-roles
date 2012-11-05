@@ -1,0 +1,12 @@
+<head>
+	<title>Log in</title>
+</head>
+
+ <% form_for @user_session, :url => {:action => 'create'} do |form| %>  
+ <%= form.error_messages %>  
+     <%= form.label :username, "Username" %>  
+     <%= form.text_field :username %>  
+     <%= form.label :password, "Password" %>  
+     <%= form.password_field :password %>  
+     <%= form.submit "Submit" %>  
+ <% end %>
